@@ -1,0 +1,143 @@
+/* Formulario */
+.section#form {
+  padding: 0 0;
+  position: relative;
+  margin-top: 8rem;
+}
+
+#form .container {
+  margin-left: 3.06rem;
+  margin-right: 3.06rem;
+}
+
+.composting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.composting img {
+  width: 22rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: clamp(1em, 1.25vw, 1.1em);
+  font-weight: 500;
+}
+
+input {
+  border: 1.5px solid #F3F3F3;
+  border-radius: 0.5rem; 
+  height: 2.5rem;
+  width: 100%;
+  padding-left: 20px;
+  margin-top: 0.5rem;
+}
+
+input:focus {
+  border: 1.5px solid var(--base-color);
+}
+
+textarea {
+  border: 1.5px solid #F3F3F3;
+  border-radius: 0.5rem; 
+  height: 13rem;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+textarea:focus {
+  border: 1.5px solid var(--base-color);
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 
+
+fieldset {
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+label i {
+  font-size: clamp(1.8em, 2vw, 1em);
+  color: var(--base-color);
+}
+
+input#idApagar {
+  display: none;
+}
+
+.formLado{
+  margin-bottom: 1rem;
+}
+
+.idAssunto,
+.idTexto,
+.idEmial {
+  margin-top: 1rem;
+}
+
+.button-second.form {
+  height: 3rem;
+  width: 9rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+.opcao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Media Screen */
+/* extra large devices: 1200 > */
+@media screen and (min-width: 1200px) {
+  /* Form */
+  #form .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .composting img {
+    width: 30rem;
+  }
+
+  .formInput {
+    width: 32rem;
+  }
+
+  .formLado {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #form fieldset {
+    width: 49%;
+    display: inline;
+  }
+
+  fieldset {
+    margin-bottom: 0rem;
+  }
+}
+
+/* medium devices: 700 > */
+@media screen and (min-width: 1600px) {
+  .formInput {
+    width: 60rem;
+  }
+}

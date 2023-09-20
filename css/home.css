@@ -1,0 +1,137 @@
+/* home */
+#home {
+  background-color: var(--body-color);
+  display: inline-flex;
+  align-items: center; 
+  overflow: hidden;
+  justify-content: center;
+}
+
+.section#home {
+  padding: 0 0;
+  margin-top: 8rem;
+}
+
+#home .image {
+  display: flex;
+  justify-content: center;
+}
+
+#home .image img {
+  position: relative;
+  width: 21rem;
+  margin-bottom: 1.5rem;
+}
+
+#home .text {
+  text-align: center;
+}
+
+#home .text p {
+  font-size: clamp(1em, 2vw, 1.3em);
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#home .text h1 {
+  max-width: 100%;
+  font-size: clamp(1.5em, 6.52vw, 2em);
+  font-weight: 700; 
+}
+
+#home .text span {
+  display: block;
+}
+
+#home .text p {
+  max-width: 100%;
+  font-size: clamp(1.125em, 1.875vw, 2.25em);
+}
+
+#home .text p.help {
+  max-width: 100%;
+  font-weight: 300; 
+}
+
+#home .objective {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#home .objective p {
+  color: var(--base-color);
+  font-weight: 700; 
+  text-transform: uppercase;
+}
+
+#home .objective .icon-chevrons-down {
+  color: var(--base-color);
+  font-size: 2em;
+  cursor: pointer;
+  animation: float 1.6s ease-in-out infinite;
+  transform: translatey(0px);
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(8px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* Media Screen */
+/* extra large devices: 1200 > */
+@media screen and (min-width: 1200px) {
+  #home {
+    justify-content: left;
+    padding-left: 8rem;
+    width: 100%;
+  }
+
+  #home .container {
+    display: flex;
+  }
+
+  #home .image {
+    display: flex;
+    padding-left: 15rem;
+  }
+
+  #home .text {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+/* large devices 1023 > */
+
+/* large devices: 800 >= 1023 */
+/* large devices: 800 > */
+@media screen and (min-width: 800px) {
+  #home .text span.nome {
+    display: inline;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  
+}
+
+/* medium devices: 700 > */
+@media screen and (max-width: 700px) {
+  
+}
+
+/* medium devices: 506 > */
+@media screen and (max-width: 506px) {
+  
+}
