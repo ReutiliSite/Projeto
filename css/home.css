@@ -103,7 +103,7 @@
 
   #home .image {
     display: flex;
-    padding-left: 15rem;
+    margin: 0 auto;
   }
 
   #home .text {
