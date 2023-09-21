@@ -120,10 +120,19 @@
   #home .text span.nome {
     display: inline;
   }  
+  main .container{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .objective{
+    margin-top: 1%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  
+  .objective{
+    margin-top: 1%;
+  }
 }
 
 /* medium devices: 700 > */

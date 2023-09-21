@@ -351,10 +351,7 @@ footer .info {
 /* large devices: 800 >= 1023 */
 /* large devices: 800 > */
 @media screen and (min-width: 800px) {
-  main .container{
-    flex-direction: column;
-    margin: 0 auto;
-  }
+
 }
 
 @media screen and (max-width: 800px) {
