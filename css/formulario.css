@@ -69,16 +69,16 @@ label i {
   color: var(--base-color);
 }
 
-input#idApagar {
+input#idDelete {
   display: none;
 }
 
-.formLado{
+.formside{
   margin-bottom: 1rem;
 }
 
-.idAssunto,
-.idTexto,
+.idSubject,
+.idText,
 .idEmial {
   margin-top: 1rem;
 }
@@ -90,7 +90,7 @@ input#idApagar {
   padding: 0.5rem;
 }
 
-.opcao {
+.option {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
@@ -120,7 +120,7 @@ input#idApagar {
     width: 32rem;
   }
 
-  .formLado {
+  .formside{
     display: flex;
     justify-content: space-between;
   }
