@@ -29,8 +29,8 @@
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
-          <li><a class="titleMenu" href="#home">Home</a></li>
-          <li><a class="titleMenu" href="#">Descarte Consiente</a></li>
+          <li><a class="titleMenu active" href="#home">Home</a></li>
+          <li><a class="titleMenu" href="#">Descarte Consciente</a></li>
           <li><a class="titleMenu" href="#">Coleta de Lixo</a></li>
           <li><a class="titleMenu" href="./html/formulario.html">Contato</a></li>
         </ul>
@@ -42,43 +42,94 @@
     </nav>
   </header>
 
-  <main id="content">
+  <main class="container">
     <section class="section" id="home">
-      <div class="container">
+      <img class="vectorOne" src="./img/vetor_um.svg" alt="Imagem de enfeite da primeira parte do header">
+      <img class="vectorTwo" src="./img/vetor_dois.svg" alt="Imagem de enfeite da primeira parte do header">
+
+      <div class="announcement">
         <div class="image">
           <img src="img/pessoas.svg" alt="Homem e mulher fazendo coleta de lixo">
         </div>
-
+  
         <div class="text">
           <div class="title">
             <h1>Sua ajuda na coleta de resíduos.</h1>
             <p class="help">Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
           </div>
-
+  
           <div class="button home">
             <a class="button-second" href="#" target="_blank">Encontre um ponto de coleta</a>
           </div>
         </div>
+      </div>
 
-        <div class="objective">
-          <p>Entenda o objetivo</p>
-          <div class="icon-chevrons-down"></div>
-        </div>
+      <div class="objective">
+        <a href="#homeTwo">Entenda o objetivo</a>
+        <a href="#homeTwo"><div class="icon-chevrons-down"></div></a>
       </div>
     </section>
 
-    <section></section>
+    <section class="section" id="homeTwo">
+      <img class="vectorTree" src="./img/vetor_tres.svg" alt="Imagem de enfeite da primeira parte do header">
+      <img class="vectorFour" src="./img/vetor_quatro.svg" alt="Imagem de enfeite da primeira parte do header">
+
+      <div class="text">
+        <article class="about">
+          <span>ReutiliSite</span>
+          <h2>Coleta seletiva e consciente</h2>
+          <p>Sabemos que a atual situação ambiental e climática exige, como nunca antes, medidas sustentáveis para o bem do futuro e qualidade do presente. Acreditamos que as grandes mudanças começam pelas pequenas atitudes, portanto, o Reutilisite incentiva e facilita uma ação simples, mas muito importante: o descarte correto do lixo.</p>
+        </article>
+  
+        <div class="waste">
+          <div class="item">
+            <img src="./img/icone_oleo.svg" alt="Desenho óleo de cozinha">
+            <h4>Óleo de Cozinha</h4>
+            <p>Um litro de óleo pode contaminar mais de 20 mil litros de água</p>
+          </div>
+  
+          <div class="item">
+            <img src="./img/icone_bateria.svg" alt="Desenho óleo de cozinha">
+            <h4>Pilhas e Baterias</h4>
+            <p>O descarte incorreto pode contaminar os lençóis freáticos</p>
+          </div>
+  
+          <div class="item">
+            <img src="./img/icone_lampada.svg" alt="Desenho óleo de cozinha">
+            <h4>Lâmpadas</h4>
+            <p>Emite vapores de mercúrio que são absorvidos pelos organismos vivos</p>
+          </div>
+  
+          <div class="item">
+            <img src="./img/icone_residuos.svg" alt="Desenho óleo de cozinha">
+            <h4>Resíduos Orgânicos</h4>
+            <p>Ao decompor-se libera gás metano, um contribuinte no aquecimento global</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="doubt">
+          <h4>Ficou com alguma dúvida?</h4>
+          <p>Entre em contato com a nossa equipe, também aceitamos elogios!</p>
+        </div>
+
+        <div class="button home">
+          <a class="button-third" href="./html/formulario.html" target="_parent">Entre em contato</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div id="linha"></div>
+    <div id="line"></div>
     <div class="container info">
-      <div class="descricao">
+      <div class="description">
         <img src="img/logo.svg" alt="Logo ReutiliSite">
-        <p class="textoFinal">Todos os direitos reservados.</p>
+        <p class="finalText">Todos os direitos reservados.</p>
       </div>
   
-      <div class="integrantes">
+      <div class="members">
         <h4>Integrantes</h4>
         <p>Beatriz Pimenta de Camargo</p>
         <p>Geovanna da Silva Lima</p>

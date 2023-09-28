@@ -38,7 +38,6 @@ html {
 body {
   color: var(--text-color);
   background: var(--body-color);
-  -webkit-font-smoothing: antialiased;
   min-width: 400px;
   font-family: "Montserrat", sans-serif;
 }
@@ -121,7 +120,6 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   font-weight: bold;
-  -webkit-font-smoothing: auto;
 }
 
 nav ul li a::after {
@@ -181,7 +179,6 @@ nav.show ul.grid {
   font-weight: 400;
   font-size: 1.875em;
   color: var(--text-color-light);
-  -webkit-font-smoothing: auto;
 }
 
 /* toggle menu */
@@ -224,7 +221,7 @@ nav.show div.icon-x{
   align-items: center;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  font-size: clamp(1em, 1vw, 1.875em);
+  font-size: clamp(1em, 1vw, 1em);
   font-weight: 700; 
   transition: background 0.3s;
   justify-content: center;
@@ -251,27 +248,27 @@ footer .info {
   align-items: center;
 }
 
-.descricao img {
+.description img {
   width: 9rem;
   margin-bottom: 0.5rem;
 }
 
-.descricao p {
+.description p {
   font-size: 0.9rem;
 }
 
-.integrantes {
+.members {
   line-height: 1.5;
 }
 
-.integrantes p {
+.members p {
   font-weight: 300;
 }
 
-#linha {
+#line {
   width: 90vw;
   border-bottom: 1px solid rgb(204, 204, 204);
-  margin-top: 30px;
+  margin-top: 1.88rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -285,18 +282,17 @@ footer .info {
   right: 1rem;
   bottom: 1rem;
 
- padding: 0.5rem;
- clip-path: circle();
+  padding: 0.5rem;                                            
+  clip-path: circle(50%);
 
- font-size: 1.5rem;
- line-height: 0;
+  font-size: 1.5rem;
+  line-height: 0;
 
 
- visibility: hidden;
- opacity: 0;
-
- transition: 0.3s;
- transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
 }
 
 .back-to-top.show {
@@ -308,6 +304,11 @@ footer .info {
 /* Media Screen */
 /* extra large devices: 1200 > */
 @media screen and (min-width: 1200px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -326,7 +327,6 @@ footer .info {
 
   nav .menu ul li a.titleMenu {
     font: 400 1rem "Montserrat", sans-serif;
-    -webkit-font-smoothing: antialiased;
   }
 
   nav .menu ul li a.titleMenu.active {
@@ -364,14 +364,14 @@ footer .info {
     flex-direction: column;
   }
 
-  footer .descricao {
+  footer .description {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
 
-  footer .integrantes {
+  footer .members {
     text-align: center;
     margin-top: 1rem;
   }
