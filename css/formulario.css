@@ -33,6 +33,7 @@ input {
   width: 100%;
   padding-left: 1.25rem;
   margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 input:focus {
@@ -48,6 +49,7 @@ textarea {
   padding-top: 0.63rem;
   margin-top: 0.5rem;
   resize: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea:focus {
@@ -95,6 +97,14 @@ input#idDelete {
   justify-content: space-between;
   margin-top: 1rem;
   align-items: center;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+label.delete i:hover{
+  color: var(--base-color-second);
 }
 
 ::placeholder {
