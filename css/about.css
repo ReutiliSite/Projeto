@@ -1,0 +1,13 @@
+#video-container {
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#video-container h1 {
+  margin-bottom: 1rem;
+  color: var(--base-color);
+}
