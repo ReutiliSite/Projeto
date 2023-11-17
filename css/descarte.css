@@ -56,7 +56,7 @@ footer {
   margin-top: -80px;
 }
 
-.linha-materiais {
+.line-materials {
   margin-bottom: 5rem;
   border-radius: 25px;
   background-color: #34CB79;
@@ -64,17 +64,17 @@ footer {
   height: 5px;
 }
 
-.img-materiais {
+.img-materials {
   position: relative;
   display: inline-block;
   align-items: center;
 }
 
-.img-materiais img {
+.img-materials img {
   max-width: 100%;
 }
 
-.img-materiais h4 {
+.img-materials h4 {
   font-size: 1rem;
 }
 
@@ -106,67 +106,67 @@ footer {
 }
 
 @media screen and (min-width: 550px) {
-  .linha-materiais {
+  .line-materials {
     margin-top: 32rem;
     height: 4px;
   }
 
-  .img-materiais {
+  .img-materials {
     top: -7.5rem;
     max-width: 100%;
     width: 18%;
   }
 
-  .img-materiais img {
+  .img-materials img {
     width: 60px;
     margin-left: 35%;
   }
 
-  .img-materiais h4 {
+  .img-materials h4 {
     font-size: 1rem;
     margin-left: 40%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .linha-materiais {
+  .line-materials {
     margin-top: 30rem;
     height: 4px;
   }
 
-  .img-materiais {
+  .img-materials {
     top: -7rem;
     width: 18%;
   }
 
-  .img-materiais img {
+  .img-materials img {
     width: 70%;
     margin-left: 26%;
     max-width: 80%;
   }
 
-  .img-materiais h4 {
+  .img-materials h4 {
     font-size: 0.8rem;
     margin-left: 30%;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .linha-materiais {
+  .line-materials {
     margin-top: 32rem;
   }
 
-  .img-materiais {
+  .img-materials {
     top: -7.5rem;
     width: 18%;
   }
 
-  .img-materiais img {
+  .img-materials img {
     width: 60px;
     margin-left: 35%;
   }
 
-  .img-materiais h4 {
+  .img-materials h4 {
     margin-left: 40%;
   }
 }
@@ -181,42 +181,42 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  .linha-materiais {
+  .line-materials {
     margin-top: 32rem;
   }
 
-  .img-materiais {
+  .img-materials {
     top: -7.5rem;
     width: 18%;
   }
 
-  .img-materiais img {
+  .img-materials img {
     width: 70px;
     margin-left: 35%;
   }
 
-  .img-materiais h4 {
+  .img-materials h4 {
     margin-left: 40%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .linha-materiais {
+  .line-materials {
     margin-top: 9rem;
     height: 5.5px;
   }
 
-  .img-materiais {
+  .img-materials {
     top: -8rem;
     width: 18%;
   }
 
-  .img-materiais img {
+  .img-materials img {
     width: 80px;
     margin-left: 55%;
   }
 
-  .img-materiais h4 {
+  .img-materials h4 {
     margin-left: 60%;
   }
 }
