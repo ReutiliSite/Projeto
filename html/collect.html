@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Beatriz Pimenta de Camargo, Geovanna da Silva Lima e Isabella Sofia Martins">
+    <title> Reutilisite - Coleta de Lixo </title>
+    <!-- Ícones -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/collect.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="scroll">
+        <nav class="container">
+            <a class="logo" href="#">
+              <img src="../img/logo.svg" alt="Logo ReutiliSite">
+            </a>
+      
+            <!-- menu -->
+            <div class="menu">
+              <ul class="grid">
+                <li><a class="titleMenu" href="../index.html">Home</a></li>
+                <li><a class="titleMenu" href="./discard.html">Descarte Consciente</a></li>
+                <li><a class="titleMenu active" href="./collect.html">Coleta de Lixo</a></li>
+                <li><a class="titleMenu" href="./form.html">Contato</a></li>
+                <li><a class="titleMenu" href="./about.html">Sobre Nós </a></li>
+              </ul>
+            </div>
+      
+            <!-- menu celular -->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-x"></div>
+          </nav>
+    </header>
+    <main>
+        <section class="section" id="form-adress">
+            <div class="container">
+                <div class="form-cep">
+                    <div class="text">
+                        <h1 class="title">Encontre um ponto de Coleta</h1>
+                    </div>
+
+                    <form action="" method="get">
+                        <div class="get-cep">
+                                <fieldset>
+                                    <label for="idCEP">Digite seu CEP: </label><br>
+                                    <input type="text" id="idCEP" name="cep" placeholder="Insira seu CEP" autocomplete="off" minlength="8" maxlength="8" required>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="idAdress">Endereço: </label><br>
+                                    <input type="text" id="idAdress" name="endereco" placeholder="Endereço">
+                                </fieldset>
+                            
+                                <fieldset>
+                                    <label for="idNeighborhood">Bairro: </label><br>
+                                    <input type="text" id="idNeighborhood" name="bairro" placeholder="Bairro">
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="idCity">Cidade: </label><br>
+                                    <input type="text" name="cidade" id="idCity" placeholder="Cidade">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!--fim do form cep-->
+            </div>
+        </section>
+    </main>
+    <script src="../js/form-cep.js" defer></script>
+</body>
+</html>
