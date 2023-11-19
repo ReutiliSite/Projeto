@@ -11,3 +11,33 @@
   margin-bottom: 1rem;
   color: var(--base-color);
 }
+
+#video-container iframe {
+  z-index: 99;
+  max-width: 100%;
+}
+
+#video-container .vectorOne,
+#video-container .vectorTwo {
+  display: none;
+}
+
+/* Media Screen */
+/* extra large devices: 1200 > */
+@media screen and (min-width: 1200px) {
+  #video-container .vectorOne {
+    position: absolute;
+    left: 0;
+    display: flex;
+  }
+
+  #video-container .vectorTwo{
+    position: absolute;
+    right: 0;
+    display: flex;
+  }
+
+  #video-container .vectorTwo {
+    top: -2.5rem;
+  }
+}
