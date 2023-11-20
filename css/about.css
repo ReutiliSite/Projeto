@@ -21,6 +21,10 @@
   display: none;
 }
 
+iframe {
+  border: none;
+}
+
 /* Media Screen */
 /* extra large devices: 1200 > */
 @media screen and (min-width: 1200px) {
