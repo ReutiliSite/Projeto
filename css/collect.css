@@ -1,26 +1,69 @@
-.body{
-    max-width: 100%;
-}
 main{
-    max-width: 100%;
     margin-top: 100px;
+    margin-bottom: 2rem;
+    max-width: 100%;
 }
-
-.text{
+body{
+    max-width: 100%;
+}
+.title{
     text-align: center;
+    margin-bottom: 2rem;
 }
-
-.form-cep h1{
-    font-size: 2em;
-}
-
-label{
-    font-weight: 500;
-}
-
-
-fieldset{
-    width: 50%;
+.zones-sp{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30rem 53rem;
+    gap: 2rem;
     margin: 0 auto;
+}
+ul li{
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.north, .south, .east, .west{
+    border-radius: 0px; 
+    color: white;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.10);
+    background-color: #37d27d;
+}
+h2{
+    margin-top: 0.5em;
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    .zones-sp{
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 400px 900px;
+        font-size: 15px;
+    }
+    .title{
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+    .vector-1, .vector-2{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 400px){
+    .vector-1, .vector-2{
+        visibility: hidden;
+    }
+}
+.vector-1{
+    width: 150px;
+    position: absolute;
+    top: -30%;
+    left: -30%;
+}
+.vector-2{
+    position: absolute;
+    left: 90%;
+    top: 18%;
 }
