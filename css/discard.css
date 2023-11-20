@@ -1,24 +1,31 @@
 .intro {
+  display: flex;
+  flex-direction: column;
   margin-top: 8rem;
   width: 100%;
 }
 
-.title {
-  width: 100%;
-  margin-left: 1rem;
+.intro img {
+  max-width: 100%;
+  height: 25rem;
 }
 
-.title h1 {
-  font-size: clamp(1.4em, 4vw, 2.5em);
+.text {
+  width: 100%;
+  margin-left: 1rem;
+  z-index: 99;
+}
+
+.text h1 {
+  font-size: 2rem;
   margin-bottom: 2rem;
   margin-right: 1rem;
 }
 
-.title p {
+.text p {
   max-width: 100%;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
-  font-size: clamp(1.125em, 1.875vw, 1.4em);
 }
 
 .vectorOneDesc {
@@ -41,27 +48,13 @@
   top: 18rem;
 }
 
-.collecting {
-  position: relative;
-  width: 100%;
-}
-
-.collecting img {
-  position: absolute;
-  width: 100%;
-  height: 25rem;
-}
-
-footer {
-  margin-top: -80px;
-}
-
 .line-materials {
   margin-bottom: 5rem;
   border-radius: 25px;
   background-color: #34CB79;
   max-width: 100%;
   height: 5px;
+  margin-top: 5rem;
 }
 
 .img-materials {
@@ -79,38 +72,16 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .title {
-    width: 60%;
+  .text {
     margin-left: 6.5rem;
   }
 
-  .title p {
+  .text p {
     width: 85%;
-  }
-
-  .collecting {
-    position: relative;
-    width: 50%;
-    left: 50%;
-    top: -25rem;
-  }
-
-  .collecting img {
-    position: absolute;
-    width: 100%;
-    margin-left: 2.5rem;
-    text-align: center;
-    margin-right: 0;
-    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 550px) {
-  .line-materials {
-    margin-top: 32rem;
-    height: 4px;
-  }
-
   .img-materials {
     top: -7.5rem;
     max-width: 100%;
@@ -130,8 +101,7 @@ footer {
 
 @media screen and (max-width: 550px) {
   .line-materials {
-    margin-top: 30rem;
-    height: 4px;
+    margin-top: 2rem;
   }
 
   .img-materials {
@@ -152,10 +122,6 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  .line-materials {
-    margin-top: 32rem;
-  }
-
   .img-materials {
     top: -7.5rem;
     width: 18%;
@@ -172,7 +138,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-
   .vectorOneDesc,
   .vectorTwoDesc,
   .vectorThreeDesc {
@@ -180,11 +145,20 @@ footer {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .line-materials {
-    margin-top: 32rem;
+@media screen and (min-width: 1024px) {
+  .intro {
+    flex-direction: row;
   }
 
+  .text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .img-materials {
     top: -7.5rem;
     width: 18%;
@@ -201,9 +175,8 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .line-materials {
-    margin-top: 9rem;
-    height: 5.5px;
+  .intro img {
+    height: 30rem;
   }
 
   .img-materials {

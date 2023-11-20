@@ -60,39 +60,41 @@
               <fieldset>
                 <label for="idName">Nome:</label><br>
                 <input type="text" id="idName" name="nome" placeholder="Insira seu nome" autocomplete="off" required>
+                <span id="nameError">Campo Obrigatório!</span>
               </fieldset>
 
               <fieldset>
-                <label for="idPhone">Telefone:</label><br>
-                <input type="tel" id="idPhone" name="telefone" placeholder="Insira seu telefone" autocomplete="off"
-                  pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"
-                  title="Número de telefone precisa ser no formato (XX) XXXX-XXXX" required>
+                <label for="idPhone">Celular:</label><br>
+                <input type="tel" id="idPhone" name="telefone" placeholder="Insira seu celular" autocomplete="off" data-js="phone">
+                <span id="phoneError">Campo Obrigatório!</span>
+                <span id="phoneInvalid">Número de celular precisa ser no formato (XX) XXXXX-XXXX</span>
               </fieldset>
             </div>
 
             <div class="formbelow">
               <div class="idEmail">
                 <label for="idEmail">E-mail:</label><br>
-                <input type="email" id="idEmail" name="email" maxlength="50" autocomplete="off"
-                  placeholder="Insira seu email" required>
+                <input type="email" id="idEmail" name="email" maxlength="50" autocomplete="off" placeholder="Insira seu email" required>
+                <span id="emailError">Campo Obrigatório!</span>
+                <span id="emailInvalid">E-mail precisa ser no formato nome@email.com</span>
               </div>
 
               <div class="idSubject">
                 <label for="idSubject">Assunto: </label><br>
-                <input type="text" id="idSubject" name="assunto" placeholder="Insira o assunto" autocomplete="off"
-                  required>
+                <input type="text" id="idSubject" name="assunto" placeholder="Insira o assunto" autocomplete="off" required>
+                <span id="subjectError">Campo Obrigatório!</span>
               </div>
 
               <div class="idText">
-                <label for="idText">Menssagem: </label><br>
-                <textarea name="texto" id="idText" cols="40" rows="10" placeholder="Escreva sua menssagem"
-                  required></textarea>
+                <label for="idText">Mensagem: </label><br>
+                <textarea name="texto" id="idText" cols="40" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+                <span id="textError">Campo Obrigatório!</span>
               </div>
 
               <div class="option">
                 <label class="delete" for="idDelete"><i class="icon-trash"></i></label>
                 <input type="reset" id="idDelete">
-                <input class="button-second form" type="submit" value="Enviar">
+                <input class="button-second form" id="enviar" type="submit" value="Enviar">
               </div>
             </div>
           </form>
@@ -120,6 +122,7 @@
 
   <!-- js main -->
   <script src="../js/main.js"></script>
+  <script src="../js/form.js"></script>
 </body>
 
 </html>

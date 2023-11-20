@@ -111,6 +111,34 @@ label.delete i:hover{
   font-family: "Montserrat", sans-serif;
 }
 
+/* Validação do formulário */
+.errorInput {
+  border: 2px solid rgb(207, 53, 53) !important;
+}
+
+#nameError,
+#phoneError,
+#emailError,
+#subjectError,
+#textError,
+#phoneInvalid,
+#emailInvalid {
+  display: none;
+  font-size: 0.8em;
+  margin-top: 0.5rem;
+  color: rgb(207, 53, 53);
+}
+
+#nameError.visible,
+#phoneError.visible,
+#emailError.visible,
+#subjectError.visible,
+#textError.visible,
+#phoneInvalid.visible,
+#emailInvalid.visible {
+  display: block;
+}
+
 /* Media Screen */
 /* extra large devices: 1200 > */
 @media screen and (min-width: 1200px) {
