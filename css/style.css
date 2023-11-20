@@ -30,6 +30,21 @@ a {
   --card-color: hsl(147, 59%, 50%); 
 }
 
+/* Scroll */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dad7d7;
+  border-radius: 20px;
+  border: 3px solid #F4F4F4;
+}
+
 /* base */
 html {
   scroll-behavior: smooth;

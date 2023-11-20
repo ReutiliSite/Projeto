@@ -21,6 +21,10 @@
   margin-bottom: 1rem;
 }
 
+.title {
+  font-size: 2em;
+}
+
 label {
   font-size: clamp(1em, 1.25vw, 1.1em);
   font-weight: 500;
